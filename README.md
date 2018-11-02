@@ -18,16 +18,18 @@ docker-compose up -d && docker-compose logs -f
 
 * 生产客户端密钥
 ```
-docker-compose exec openvpn rm -rf /etc/openvpn/ca.key
 docker-compose exec openvpn easyrsa build-client-full <CLIENT_NANE> nopass
 ```
 
 * 导出客户端密钥
 ```
-docker-compose exec openvpn ovpn_getclient <CLIENT_NANE> > <CLIENT_NANE>.ovpn
+docker-compose exec -T openvpn ovpn_getclient <CLIENT_NANE> > <CLIENT_NANE>.ovpn
 ```
 
 ### Refs
 * https://help.aliyun.com/document_detail/87549.html
+
+### Others
 * https://github.com/jpetazzo/dockvpn
+* http://dockone.io/article/214
 
