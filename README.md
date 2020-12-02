@@ -30,6 +30,5 @@ docker-compose exec -T openvpn ovpn_getclient <CLIENT_NANE> > <CLIENT_NANE>.ovpn
 * https://help.aliyun.com/document_detail/87549.html
 
 ### Others
-* https://github.com/jpetazzo/dockvpn
 * http://dockone.io/article/214
-
+* https://github.com/jpetazzo/dockvpn
